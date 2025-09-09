@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home page</title>
+    <meta  name="description" content="Page that demonstrates my prerequisite knowledge by applying HTML, CSS, and JavaScript to the design and development of my course home page." >
+    <meta name="author" content="Aguilar Copa Rene Marcelo">
+
+    <!--Style Fonts Here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!--Style Sheets Here-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--Style Scripts Here-->
+    <script defer src="scripts/navigation.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span>Course Home page</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li ><a href="#">Chamber Project</a></li>
+            <li ><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <div class="about">
+                <p class="text1">I am Marcelo, I´m 26 years old.  I have a big family we are 5 brothers.
+
+                    I decided to learn about programming because I thing this field it is in all the things that we use every day. 
+                            
+                    Seven years ago, I started learning English, in which I am not yet as good as I would like.I like to play soccer, go to swiming.
+                </p>
+            </div>  
+        </section>
+        <section >
+            <h2>Student Photo</h2>
+            <div class="myphoto">
+                <img src="images/profile.jpg" alt="Me" width="200">
+            </div>
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/marcelo.aguilar.184881" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/marcelo-aguilar-b64134253/" target="_blank"><img src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
+            <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16"></a>
+            <a href="https://github.com/maguilar08" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+
+        </div>
+        <p> &copy <span id="currentyear"></span> •  Marcelo Aguilar • Cochabamba, Bolivia</p>
+        <p  class="last" id="lastModified"></p>
+    </footer>
+</body>
+</html>
