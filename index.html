@@ -11,14 +11,9 @@
     <!--Style Fonts Here-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
     <!--Style Sheets Here-->
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
@@ -29,7 +24,7 @@
 
 <body>
     <header>
-        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <img rel="preload" src="images/home.svg" alt="Site Logo" width="512" height="512">
         <span>Course Home page</span>
         <button id="ham-btn" class="hamburger" aria-label="Open menu"></button>
     </header>
@@ -42,7 +37,7 @@
     </nav>
     <main>
         <h1>Home</h1>
-        <section>
+        <section class="first-sec">
             <h2>About Me</h2>
             <div class="about">
                 <p class="text1">I am Marcelo, I´m 26 years old.  I have a big family we are 5 brothers.
@@ -53,18 +48,18 @@
                 </p>
             </div>  
         </section>
-        <section >
+        <section  class="second-sec" >
             <h2>Student Photo</h2>
             <div class="myphoto">
                 <img src="images/profile.jpg" alt="myself" width="200">
             </div>
         </section>
-        <section>
+        <section class="third-sec">
             <h2>Web Certificate Courses</h2>
             <div class="filters">
-                <button id="allBtn">All</button>
-                <button id="cseBtn">CSE</button>
-                <button id="wddBtn">WDD</button>
+                <button id="allBtn" class="filter-btn">All</button>
+                <button id="cseBtn" class="filter-btn">CSE</button>
+                <button id="wddBtn" class="filter-btn">WDD</button>
               </div>
               <div id="courses-container"></div>
               <p id="total-credits"></p>
@@ -72,10 +67,10 @@
     </main>
     <footer>
         <div class="social">
-            <a href="https://www.facebook.com/marcelo.aguilar.184881" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
-            <a href="https://www.linkedin.com/in/marcelo-aguilar-b64134253/" target="_blank"><img src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
-            <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16"></a>
-            <a href="https://github.com/maguilar08" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.facebook.com/marcelo.aguilar.184881" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/marcelo-aguilar-b64134253/" target="_blank"><img src="images/linkedin.svg" alt="linked in" width="16" height="16" loading="lazy"></a>
+            <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16" loading="lazy"></a>
+            <a href="https://github.com/maguilar08" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16" loading="lazy"></a>
 
         </div>
         <p> &copy;<span id="currentyear"></span> •  Marcelo Aguilar • Cochabamba, Bolivia</p>

@@ -1,14 +1,8 @@
 @media only screen and (min-width: 38rem) {
     /* Color Theme Swatches in Hex */
-    :root {
-        --first-color: #264653; 
-        --second-color: #4B4B4B; 
-        --third-color: #2A9D8F; 
-        --fourth-color: #FDFDF6; 
-        --fifth-color: #E76F51; 
-    }
+
     header, main, nav, footer{
-        max-width: 900px;
+        max-width: 90ch; /*instead of 900px*/
         margin: 0 auto;
     }
 
@@ -49,7 +43,7 @@
         
       }
       
-      section:nth-of-type(1) {
+      .first-sec{
         grid-column: 1; 
         grid-row: 2;
         border: 3px solid #264653; 
@@ -57,7 +51,7 @@
         padding: 1rem;
       }
       
-      section:nth-of-type(2) {
+      .second-sec {
         grid-column: 2; 
         grid-row: 2;
         border: 3px solid #264653; 
@@ -65,7 +59,7 @@
         padding: 1rem;
       }
       
-      section:nth-of-type(3) {
+      .third-sec{
         grid-column: 1 / -1; 
         border: 3px solid #264653; 
         border-radius: 8px;

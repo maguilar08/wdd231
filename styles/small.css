@@ -145,19 +145,18 @@ h2{
     align-self: center;
 }
 
-#wddBtn, #cseBtn, #allBtn{
+.filter-btn{
     font-family: 'Montserrat', sans-serif;
     color: var(--fourth-color);
     background-color: var(--first-color);
-    padding: 5px 15px 5px 15px;
+    padding: 5px 15px;
     border: none;
     border-radius: .5rem;
     cursor: pointer;
 }
 
-#wddBtn:hover, #cseBtn:hover, #allBtn:hover {
+.filter-btn:hover {
     background-color: var(--third-color);
-    
 }
 
 
