@@ -139,6 +139,50 @@ h2{
     border-radius: 1cap;
 }
 
+.filters{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+#wddBtn, #cseBtn, #allBtn{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--fourth-color);
+    background-color: var(--first-color);
+    padding: 5px 15px 5px 15px;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+#wddBtn:hover, #cseBtn:hover, #allBtn:hover {
+    background-color: var(--third-color);
+    
+}
+
+
+.course-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: var(--first-color);
+}
+
+.course-card.completed {
+    background-color: #d1f7d6; /* Verde suave */
+    border-color: #2A9D8F;
+    
+}
+  
+.course-card.not-completed {
+    background-color: #f9d3d3; /* Rojo suave */
+    border-color: #E76F51;
+}
+
+#total-credits{
+    color: var(--first-color);
+}
+
 /*******************FOOTER*******************/
 
 footer{

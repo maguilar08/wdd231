@@ -24,6 +24,7 @@
 
     <!--Style Scripts Here-->
     <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/course.js"></script>
 </head>
 
 <body>
@@ -55,11 +56,18 @@
         <section >
             <h2>Student Photo</h2>
             <div class="myphoto">
-                <img src="images/profile.jpg" alt="Me" width="200">
+                <img src="images/profile.jpg" alt="myself" width="200">
             </div>
         </section>
         <section>
             <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button id="allBtn">All</button>
+                <button id="cseBtn">CSE</button>
+                <button id="wddBtn">WDD</button>
+              </div>
+              <div id="courses-container"></div>
+              <p id="total-credits"></p>
         </section>
     </main>
     <footer>
@@ -70,7 +78,7 @@
             <a href="https://github.com/maguilar08" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
 
         </div>
-        <p> &copy <span id="currentyear"></span> •  Marcelo Aguilar • Cochabamba, Bolivia</p>
+        <p> &copy;<span id="currentyear"></span> •  Marcelo Aguilar • Cochabamba, Bolivia</p>
         <p  class="last" id="lastModified"></p>
     </footer>
 </body>
