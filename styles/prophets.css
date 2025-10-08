@@ -1,0 +1,58 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+  
+header, footer {
+    text-align: center;
+    background-color: #d0cfe3;
+    padding: 1rem;
+    color: #3c2e8d;
+}
+  
+h1 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px #666;
+}
+  
+h2 {
+    color: #3c2e8d;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+  
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 0.75rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+section {
+    background-color: #c9c9e0;
+    border: 1px solid #888;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+}
+  
+section img {
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+  
+footer {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+  

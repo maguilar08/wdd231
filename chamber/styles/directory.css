@@ -1,0 +1,385 @@
+/* Color Theme Swatches in Hex */
+:root {
+    --first-color: #264653; 
+    --second-color: #4B4B4B; 
+    --third-color: #2A9D8F; 
+    --fourth-color: #FDFDF6; 
+    --fifth-color: #E76F51; 
+}
+
+/*******************HAMBURGER *******************/
+
+.hamburger{
+    background: none;
+    border: none;
+    color: var(--fourth-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before{
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/* === HEADER === */
+header {
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    flex: 1;
+    text-align: center;
+    color: #fff;
+  }
+.navigation{
+    display: none;
+
+}
+
+.navigation.show{
+    display: block;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a{
+    display: block;
+    padding: .8rem 10px;
+    color: var(--fourth-color);
+    text-decoration: none;
+    
+}
+
+.navigation li.current{
+    background-color: #eee;
+}
+
+.navigation a:hover{
+    background-color: var(--fourth-color);
+    color: var(--first-color);
+}
+
+  
+  /* === HERO SECTION (with <img>) === */
+  .hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 450px;
+    filter: brightness(70%);
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+  }
+  
+  .hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: gold;
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: #f0c400;
+  }
+  
+  /* === RESPONSIVE === */
+
+
+
+
+
+
+
+
+
+
+/* === RESET & BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Acme, Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    color: #3F5D69;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* === MAIN CONTAINER === */
+  main {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* === BUTTON MENU === */
+  .menu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: var(--third-color);
+    text-align: center;
+  }
+  
+  .menu button {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    border: none;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    background-color: var(--fourth-color);
+    color: var(--first-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu button:hover {
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+  }
+  
+  /* === MEMBER CARD COMMON === */
+  #cards section {
+    
+    padding: 0.5rem;
+    border: solid #2A9D8F;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  #cards section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: var(--first-color);
+  }
+  
+  #cards section p {
+    margin: 0.25rem 0;
+  }
+  
+  #cards section a {
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--third-color);
+    text-decoration: none;
+  }
+  
+  #cards section a:hover {
+    text-decoration: underline;
+  }
+  
+  #cards img {
+    box-shadow: 0 0 1rem #555;
+    height: 75px;
+    width: auto;
+    margin-top: 0.3rem;
+  }
+  
+  /* === GRID VIEW === */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+  }
+  
+  /* === LIST VIEW === */
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+  .list img {
+    display: none;
+  }
+  
+  .list section:nth-child(even) {
+    background-color: #97d6e652;
+  }
+
+
+/* === FOOTER === */
+  footer {
+    background-color: var(--first-color); /* light gray */
+    color: var(--fourth-color); /* dark text */
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    font-size: 0.9rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer-info h4 {
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+  }
+  
+  .footer-info p {
+    margin: 0.2rem 0;
+  }
+  
+  .footer-info a {
+    color: var(--fourth-color);
+  }
+  
+  .footer-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .footer-social a {
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    border: #ccc solid 1px;
+  }
+  
+  .footer-social a:hover {
+    background-color: #ddd;
+  }
+  
+  .footer-social img {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .footer-meta p {
+    margin: 0.3rem 0;
+  }
+  
+  /* ===== Desktop layout ===== */
+  @media (min-width: 700px) {
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  
+    .footer-info, .footer-meta {
+      flex: 1 1 250px;
+    }
+  
+    .footer-meta {
+      text-align: right;
+    }
+  }
+
+@media (max-width: 700px) {
+    .header-container {
+      flex-direction: column;
+    }
+  
+    .nav-bar {
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    .hero-text h2 {
+      font-size: 1.5rem;
+    }
+    /*------------------------------------------*/
+
+}
+     

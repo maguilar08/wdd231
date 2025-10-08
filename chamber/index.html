@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!--Style Sheets Here-->
+    <link rel="stylesheet" href="styles/directorysmall.css">
+    <link rel="stylesheet" href="styles/bigger.css">
+
+    <!--Scripts Sheets Here-->
+    <script defer src="scripts/events.js"></script>
+    <script defer src="scripts/spotlight.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/directory.js"></script>
+
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.ico">  
+
+    <!--Social Media Meta Tags-->
+    <meta property="og:title" content="Home ">
+    <meta property="og:description" content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+    <meta property="og:image" content="https://maguilar08.github.io/wdd231/images/Logo.png">
+    <meta property="og:url" content="https://maguilar08.github.io/wdd231/chamber/index">
+</head>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <img src="images/logo.png" alt="Chamber Logo" class="logo">
+          <h1>Cochabamba Chamber of Commerce</h1>
+          <nav class="navigation" id="nav-bar">
+            <a href="">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Join Us</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+        <button id="ham-btn" class="hamburger" aria-label="Open menu"></button>
+    </header>
+      
+      <!-- === HERO SECTION === -->
+    <section class="hero">
+        <img src="images/hero_cochabamba.png" alt="Cochabamba city view" class="hero-img">
+        <div class="hero-text">
+          <h2>Connecting Businesses in Cochabamba</h2>
+          <p>Together we grow stronger — Join our vibrant community today!</p>
+          <a href="#" class="hero-btn">Become a Member</a>
+        </div>
+    </section>
+    <h3>Home</h3>
+    <main>
+        <section class="top-row" aria-label="Current events and weather">
+            <!-- EVENTS -->
+            <div class="events card" id="events-section">
+                <h4>Current Event(s)</h4>
+                <div id="events-list"></div>
+            </div>
+    
+            <!-- WEATHER -->
+            <div class="weather card" id="weather-section" aria-live="polite">
+                <h4>Current Weather</h4>
+        
+                <!-- Current weather -->
+                <div class="weather-current">
+                    <h5 id="town">Town</h5>
+                    <img id="graphic" src="" alt="" />
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
+        
+                <!-- 3-day forecast -->
+                <div class="weather-forecast" id="forecast-container">
+                    <h5>3-Day Forecast</h5>
+                    <div id="forecast-cards" class="forecast-cards"></div>
+                </div>
+            </div>
+        </section>
+  
+      <!-- SPOTLIGHTS -->
+        <section class="spotlights card" id="spotlight-section">
+            <h4>Member Spotlights</h4>
+            <div id="spotlight-cards" class="spotlight-grid"></div>
+        </section>
+    </main>
+  
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Cochabamba Chamber of Commerce</h4>
+                <p>Talizman Street 0000</p>
+                <p><a href="">cochachamber@.com</a></p>
+                <p>(+591) 700-00000</p>
+            </div>
+      
+            <div class="footer-social">
+                <a href="" target="_blank">
+                    <img src="images/youtube.svg" alt="Youtube">
+                </a>
+                <a href="https://x.com/?lang=es" target="_blank">
+                    <img src="images/twitter-x.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/in/marcelo-aguilar-b64134253/" target="_blank">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+      
+            <div class="footer-meta">
+                <p>WDD231 Class Project</p>
+                <p>&copy; <span id="currentyear"></span> Marcelo Aguilar</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+@media only screen and (min-width: 38rem) {
+    .hamburger{
+        display: none;
+    } 
+    .navigation {
+        display: flex;
+        gap: 1rem;
+      }
+      
+      .navigation a {
+        color: #fff;
+        background-color: #4f727e8a;
+        padding: 3px;
+        border-radius: 3px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 1s ease;
+      }
+      
+      .navigation a:hover {
+        color: #3F5D69;
+        background-color: white;
+        padding: 3px;
+        border-radius: 3px;
+      }
+}
