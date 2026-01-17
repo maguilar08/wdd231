@@ -1,0 +1,43 @@
+{
+    "family_name": "Aguilar",
+    "move_in_date": "1998-12-08",
+    "number_of_people": 7,
+    "visited_by_bishopric": false,
+    "family_members":[
+        {
+            "name":"Rene Aguilar",
+            "gender": "Male", 
+            "birthday": "1970-01-20"
+        },
+        {
+            "name":"Lucy Copa",
+            "gender": "Female", 
+            "birthday": "1974-06-16"
+        },
+        {
+            "name":"Marcelo Aguilar",
+            "gender": "Male", 
+            "birthday": "1998-08-12"
+        },
+        {
+            "name":"Miguel Aguilar",
+            "gender": "Male", 
+            "birthday": "2001-02-20"
+        },
+        {
+            "name":"Diego Aguilar",
+            "gender": "Male", 
+            "birthday": "2003-10-05"
+        },
+        {
+            "name":"Marco Aguilar",
+            "gender": "Male", 
+            "birthday": "2004-05-02"
+        },
+        {
+            "name":"Mosiah Aguilar",
+            "gender": "Male", 
+            "birthday": "2006-12-4"
+        }
+    ]
+}
