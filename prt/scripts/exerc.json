@@ -1,0 +1,32 @@
+{
+    "family_name": "Aguilar",
+    "move-in date": "02-15-1997",
+    "number-of-people": 7,
+    "visited-by-bishopric": true,
+    "family-members": 
+    [
+        {
+            "name": "Marcelo",
+            "gender": "Male",
+            "birthdate": "08-12-1998"
+        },
+        {
+            "name": "Miguel",
+            "gender": "Male",
+            "birthdate": "20-02-2001"
+        }, {
+            "name": "Diego",
+            "gender": "Male",
+            "birthdate": "05-10-2002"
+        }, {
+            "name": "Marco",
+            "gender": "Male",
+            "birthdate": "02-05-2004"
+        },
+        {
+            "name": "Mosiah",
+            "gender": "Male",
+            "birthdate": "04-01-2006"
+        }
+    ]
+}
