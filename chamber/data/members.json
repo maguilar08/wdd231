@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Café Gourmet Cochabamba",
+      "address": "Av. América N° 456, Cochabamba, Bolivia",
+      "phone": "+591 4 4456789",
+      "website": "https://www.cafegourmetcbba.com",
+      "image": "cafe_gourmet.jpg",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Hotel Regina Resort",
+      "address": "Km 10 Vinto, Cochabamba, Bolivia",
+      "phone": "+591 4 4230010",
+      "website": "https://www.reginaresort.com.bo",
+      "image": "hotel_regina.png",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Farmacias Chávez",
+      "address": "Av. San Martín N° 1235, Cochabamba, Bolivia",
+      "phone": "+591 4 4229876",
+      "website": "https://www.farmaciaschavez.com.bo",
+      "image": "farmacias_chavez.png",
+      "membershipLevel": "Bronze"
+    },
+    {
+      "name": "La Estancia Steakhouse",
+      "address": "Calle España N° 141, Cochabamba, Bolivia",
+      "phone": "+591 4 4256633",
+      "website": "https://www.laestancia.com.bo",
+      "image": "la_estancia.webp",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Cine Center Cochabamba",
+      "address": "Av. Ramón Rivero N° 1465, Cochabamba, Bolivia",
+      "phone": "+591 4 4660070",
+      "website": "https://www.cinecenter.com.bo",
+      "image": "cine_center.jpg",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Tigo Bolivia",
+      "address": "Av. Ballivián N° 580, Cochabamba, Bolivia",
+      "phone": "+591 800174444",
+      "website": "https://www.tigo.com.bo",
+      "image": "tigo.png",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Panadería San Antonio",
+      "address": "Calle Sucre N° 215, Cochabamba, Bolivia",
+      "phone": "+591 4 4251987",
+      "website": "https://www.panaderiasanantonio.com.bo",
+      "image": "panaderia.jpg",
+      "membershipLevel": "Bronze"
+    }
+  ]
