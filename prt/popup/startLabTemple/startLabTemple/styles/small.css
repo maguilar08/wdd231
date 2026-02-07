@@ -1,0 +1,52 @@
+*{box-sizing: border-box;}
+#mydialog {
+    border-radius: 14px;
+    padding: 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid #6b7280;
+    /*background: rgba(255, 255, 255, 0.65);*/   /*transparente*/
+}
+
+
+
+
+
+
+
+
+
+
+
+#mydialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: #ddd;
+    padding: 5px;
+    border-bottom: #aaa 1px solid;
+}
+
+#mydialog h2 {
+    margin: 0;
+    color: #275690;
+}
+
+#mydialog button {
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #aaa;
+}
+
+#mydialog button:hover {
+    background-color: #375170;
+    color: white;
+}
+
+#mydialog p {
+    padding: 10px;
+    color: #375170;
+}
+
+::backdrop {
+    background-color: rgba(255, 255, 255, 0.75);
+}
