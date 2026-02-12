@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One&family=Nunito&display=swap');
+
+:root {
+  --primary-color: #F4A261;
+  --secondary-color: #2A9D8F;
+  --accent1-color: #E76F51;
+  --accent2-color: #264653;
+
+  --heading-font: "Cantora One", sans-serif;
+  --paragraph-font: Nunito, Helvetica, sans-serif;
+
+  --headline-color-on-white: #F4A261;
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: #2A9D8F;
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: #2A9D8F;
+  --nav-link-color: white;
+  --nav-background-color: #E76F51;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #F4A261;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em;
+  font-size: 18px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+hr {
+  height: 3px;
+  margin: 30px 0;
+  background: var(--accent1-color);
+}
+
+header {
+  padding: 1em;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.colors th {
+  background-color: #ccc;
+}
+
+.colors td {
+  height: 3em;
+}
+
+.primary { background-color: var(--primary-color); }
+.secondary { background-color: var(--secondary-color); }
+.accent1 { background-color: var(--accent1-color); }
+.accent2 { background-color: var(--accent2-color); }
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  background-color: var(--nav-hover-background-color);
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas:
+    ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+
+.sm-home { grid-area: home; background: #ccc; }
+.sm-page2 { grid-area: page2; background: #ccc; }
+.sm-page3 { grid-area: page3; background: #ccc; }
+
+.top { grid-area: top; border-left: 1px solid; }
+.left { grid-area: left; border-top: 1px solid; border-left: 1px solid; }
+.right { grid-area: right; border-top: 1px solid; border-right: 1px solid; }
