@@ -40,6 +40,7 @@
     margin: 1rem 10px;
     grid-area: name;
     color: var(--first-color);
+    font-size: 1.5rem;
 }
 
 #allplaces div img {
