@@ -1,0 +1,22 @@
+@media only screen and (min-width: 38rem){
+   
+    #allplaces div {
+        display: grid;
+        grid-template-areas: 
+        "photograph name"
+        "photograph description"
+        "photograph location"
+        "button button" ;
+    }
+    /*to force one size*/
+     /*
+    #allplaces div img {
+        width: 300px;
+    }
+    */
+    #allplaces div img:hover {
+        opacity: 0.5;
+       
+    }
+    
+}

@@ -1,0 +1,69 @@
+@media only screen and (min-width: 38rem){
+   
+    #allplaces div {
+        display: grid;
+        grid-template-areas: 
+        "photograph name"
+        "photograph description"
+        "photograph location"
+        "button button" ;
+    }
+    /*to force one size*/
+     /*
+    #allplaces div img {
+        width: 300px;
+    }
+    */
+    #allplaces div img:hover {
+        opacity: 0.5;
+       
+    }
+    /*------------------------------------------*/
+    
+
+     /*HEADER */
+    .hamburger {
+      display: none;
+    }
+      
+    .navigation {
+        display: flex;
+        gap: 1rem;
+    }
+      
+    .navigation a {
+        color: #fff;
+        background-color: #4f727e8a;
+        padding: 3px 8px;
+        border-radius: 3px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+      
+    .navigation a:hover {
+        color: #3F5D69;
+        background-color: #fff;
+    }
+      
+        /* FOOTER LAYOUT */
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+      
+    .footer-info,
+    .footer-meta {
+        flex: 1 1 250px;
+    }
+      
+    .footer-meta {
+        text-align: right;
+    }
+      
+        
+}

@@ -1,0 +1,21 @@
+@media only screen and (min-width: 64rem){
+
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        
+    }
+
+    #allplaces div img {
+        border-radius: 8px;
+        margin-left: 1rem;
+        margin-top: 0.6rem;
+        
+       
+    }
+    #allplaces div img:hover {
+        opacity: 0.5;
+       
+    }
+}

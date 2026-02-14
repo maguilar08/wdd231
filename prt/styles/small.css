@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+#visitMessage {
+    margin: 1rem auto;
+    padding: 0.8rem 1rem;
+    max-width: 500px;
+    text-align: center;
+    background: #f2f2f2;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+
+#allplaces div {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "location"
+    "button";
+
+    justify-items: center;   /* centra horizontal */
+    align-items: center;     /* centra vertical */
+    text-align: center;      /* centra texto */
+}
+
+#allplaces div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+#allplaces div img {
+    width: 100%;
+    grid-area: photograph;
+    
+    
+}
+
+#allplaces div p {
+    margin: 1rem 10px;
+    grid-area: description;
+    
+}
+#allplaces div address {
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+/* BUTTON*/
+.learn-btn {
+    display: block;
+    width: 80%;
+    margin: 1rem auto 1.5rem auto;
+    padding: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    background: #3a3a3a;
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.25s;
+    grid-area: button;
+}
+
+.learn-btn:hover {
+    background: #000;
+    transform: scale(1.03);
+}
