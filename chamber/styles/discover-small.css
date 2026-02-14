@@ -99,11 +99,11 @@ body {
     color: #222;
 }
   
-h1, h3, h4 {
+h1, h2, h3 {     /**/
     margin: 0;
 }
   
-h3 {
+h2 {  /**/
     font-size: 2rem;
     color: #3F5D69;
     padding: 1rem;
