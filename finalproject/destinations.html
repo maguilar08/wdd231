@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <meta name="description" content="Browse a curated list of destinations to visit, including parks, attractions, and scenic spots. Find the best places to go and the ideal time to visit each one.">
+    <meta name="author" content="Aguilar Copa Rene Marcelo">
+
+     <!--Social Media Meta Tags-->
+     <meta property="og:title" content="Destinations">
+     <meta property="og:description" content="Explore top destinations, attractions, and must-visit places. Discover when to go and what to expect for a perfect trip.">
+     <meta property="og:image" content="https://maguilar08.github.io/wdd231/finalproject/images/logo.png">
+     <meta property="og:url" content="https://maguilar08.github.io/wdd231/finalproject">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!--Style Sheets Here-->
+    <link rel="stylesheet" href="styles/home-small.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <!--Scripts Sheets Here-->
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/footer.js"></script>
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Site Logo" width="440" height="440">
+        <span>Weekend Explorer</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="destinations.html">Destinations</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <picture>
+            <source media="(min-width:608px)" srcset="images/destinations-hero.webp">
+            <img src="images/destinations-hero-mobile.webp" alt="La Paz city view" width="480" height="270"class="hero-img">
+        </picture>
+        <div class="hero-text">
+          <h2>Explore. Enjoy. Repeat</h2>
+          <p>Find the best places to visit and enjoy — fast and easy!</p>
+          <a href="#" class="hero-btn">News Letter</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="social">
+            <a href="#" target="_blank"><img src="images/youtube.svg" alt="Youtube" width="16" height="16"></a>
+            <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/marcelo-aguilar-b64134253/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
+        </div>
+        <p>WDD231 Final Project</p>
+        <p>&copy; <span id="currentyear"></span> Marcelo Aguilar</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

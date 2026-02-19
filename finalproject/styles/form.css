@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #2A9D8F;
+    --secondary-color: #E76F51;
+    --third-color: #F4A261;
+    --color: white;
+    --text-color: #264653;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+/******************HEADER******************/
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: var(--primary-color);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 2rem;
+    color: var(--color);
+    text-align: center;
+    font-family: "Cantora One", " Helvetica", "sans-serif";
+}
+/******************HAMBURGER NAVIGATION******************/
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--color);
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after {
+    content: "\2630";
+    
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+/******************NAVIGATION******************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+    text-align: center;
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: var(--text-color);
+    color: var(--color);
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+
+
+/* RESULTS */
+
+.results-box {
+  
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.1);
+  
+}
+
+h1 {
+    font-family: "Cantora One";
+    color:  #2A9D8F;
+}
+ p{
+    color: #264653;
+    font-family: "nunito";
+ }
+  

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="Discover great places to visit, fun things to do, and local restaurants. Find quick ideas for weekends or holidays with helpful tips, images, and featured spots.">
+    <meta name="author" content="Aguilar Copa Rene Marcelo">
+
+     <!--Social Media Meta Tags-->
+     <meta property="og:title" content="Home">
+     <meta property="og:description" content="Explore featured places, activities, and restaurants to plan your perfect weekend or holiday. Get inspired with quick and easy travel ideas.">
+     <meta property="og:image" content="https://maguilar08.github.io/wdd231/finalproject/images/logo.png">
+     <meta property="og:url" content="https://maguilar08.github.io/wdd231/finalproject">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!--Style Sheets Here-->
+    <link rel="stylesheet" href="styles/home-small.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <!--Scripts Sheets Here-->
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/footer.js"></script>
+    <SCript defer src="scripts/weather.js"></SCript>
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Site Logo" width="440" height="440">
+        <span>Weekend Explorer</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <picture>
+            <source media="(min-width:608px)" srcset="images/hero_cochabamba.webp">
+            <img src="images/hero_cochabamba-mobile.webp" alt="Cochabamba city view" width="480" height="270"class="hero-img">
+        </picture>
+        <div class="hero-text">
+          <h2>Never Wonder Where to Go Again</h2>
+          <p>Find the best places to visit, eat, and enjoy — fast and easy!</p>
+          <a href="#" class="hero-btn">News Letter</a>
+        </div>
+    </section>
+    <main>
+
+        <section class="top-row">
+            <div  class="purpose">
+                <p>
+                    Weekend Explorer, inspired by the idea of making every weekend an adventure, 
+                    is a platform designed to help people discover exciting places to visit 
+                    and great restaurants to enjoy. We guide explorers to fun destinations, 
+                    local attractions, and hidden gems, offering curated recommendations and 
+                    helpful tips on the best times to visit.
+                </p> 
+            </div>
+            <div class="weathercard" id="weather-section" aria-live="polite">
+                <h3>Current Weather</h3>
+            
+                <!-- Current weather -->
+                <div class="weather-current">
+                    <h5 id="town">Town</h5>
+                    <img id="graphic" src="weather" alt="" />
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
+            
+                <!-- 3-day forecast -->
+                <div class="weather-forecast" id="forecast-container">
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecast-cards" class="forecast-cards"></div>
+                </div>
+            </div>          
+        </section>
+        <h1>Recommend a Place</h1>
+
+    <form method="GET" action="thanks.html" class="designOne">
+
+        <label>
+        First Name
+        <input type="text" name="first" required autocomplete="given-name">
+        </label>
+
+        <label>
+        Last Name
+        <input type="text" name="last" required autocomplete="family-name">
+        </label>
+
+        <label>
+        Email
+        <input type="email" name="email" required placeholder="example@email.com">
+        </label>
+
+        <label>
+        Place Name
+        <input type="text" name="place" required placeholder="Cristo de la Concordia">
+        </label>
+
+        <label>
+        City
+        <input type="text" name="city" required placeholder="Cochabamba">
+        </label>
+
+        <h4>Category</h4>
+
+        <label><input type="radio" name="category" value="Restaurant" checked> Restaurant</label>
+
+        <label><input type="radio" name="category" value="Tourist Attraction"> Tourist Attraction</label>
+
+        <label><input type="radio" name="category" value="Park"> Park</label>
+
+        <label><input type="radio" name="category" value="Museum"> Museum</label>
+
+        <label><input type="radio" name="category" value="Other"> Other</label>
+
+
+        <label>
+        Description
+        <textarea name="description" rows="4" placeholder="Tell us why this place is special"></textarea>
+        </label>
+
+
+        <input type="submit" value="Submit Recommendation">
+
+    </form>
+
+
+            
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="#" target="_blank"><img src="images/youtube.svg" alt="Youtube" width="16" height="16"></a>
+            <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/marcelo-aguilar-b64134253/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
+        </div>
+        <a class="video" href="#">Video Content Requirements</a>
+        <p>WDD231 Final Project</p>
+        <p>&copy; <span id="currentyear"></span> Marcelo Aguilar</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

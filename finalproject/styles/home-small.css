@@ -1,0 +1,348 @@
+:root {
+    --primary-color: #2A9D8F;
+    --secondary-color: #E76F51;
+    --third-color: #F4A261;
+    --color: white;
+    --text-color: #264653;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+/******************HEADER******************/
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: var(--primary-color);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 2rem;
+    color: var(--color);
+    text-align: center;
+    font-family: "Cantora One", " Helvetica", "sans-serif";
+}
+/******************HAMBURGER NAVIGATION******************/
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--color);
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after {
+    content: "\2630";
+    
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+/******************NAVIGATION******************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+    text-align: center;
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: var(--text-color);
+    color: var(--color);
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+/******************HERO SECTION******************/
+
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 450px;
+    filter: brightness(60%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.hero-text h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-family: "Cantora One", " Helvetica", "sans-serif";
+}
+
+.hero-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: Nunito, sans-serif;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: gold;
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: Nunito, sans-serif;
+}
+  
+.hero-btn:hover {
+    background-color: #f0c400;
+}
+
+/******************MAIN******************/
+
+
+
+.purpose {
+    font-family: "Nunito", " Helvetica", "sans-serif";
+    font-size: 1.3rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/******************WEATHER******************/
+.weather-current {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:.5rem;
+    text-transform: capitalize;
+}
+div h3 {
+    text-align: center;
+    color: var(--primary-color);
+    font-family: "Cantora One", " Helvetica", "sans-serif";
+    font-size: 1.3rem;
+}
+#description, #temperature  {
+    color: var(--text-color);
+    font-family: "Nunito", " Helvetica", "sans-serif";
+    
+}
+
+.weather-current img {
+    width: 80px;
+    height: 80px;
+}
+#town {
+    color: var(--primary-color);
+    font-family: "Nunito", " Helvetica", "sans-serif";
+
+}
+
+.weather-forecast .forecast-cards {
+    display: flex;
+    flex-direction: row;
+    gap:.5rem;
+    overflow: auto;
+    padding-top: .5rem;
+    text-transform: capitalize;
+}
+.forecast-card {
+    min-width: 100px;
+    background:#fafafa;
+    padding: .5rem;
+    border-radius:6px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,.04);
+    font-family: "Nunito", " Helvetica", "sans-serif";
+    color: var(--text-color);
+
+}
+
+/******************FORM******************/
+h1{
+    text-align: center;
+    color: var(--primary-color);
+    font-family: "Cantora One", " Helvetica", "sans-serif";
+}
+
+h4 {
+    font-family: "Cantora One", " Helvetica", "sans-serif";
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    padding-top: 20px;
+   
+
+}
+
+form {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.designOne {
+
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
+  }
+  
+  label {
+  
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: var(--text-color);
+    font-family: "Nunito", " Helvetica", "sans-serif";
+  
+  }
+  
+  input, textarea, select {
+  
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #264653;
+    margin-top: 5px;
+    font-size: 1rem;
+  
+  }
+  
+  textarea {
+  
+    resize: vertical;
+  
+  }
+  
+  /* RADIO */
+  
+  .designOne input[type="radio"] {
+  
+    margin-right: 8px;
+  
+  }
+  
+  /* BUTTON */
+  
+  input[type="submit"] {
+  
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Nunito", " Helvetica", "sans-serif";
+    font-weight: bold;
+  
+  }
+  
+  input[type="submit"]:hover {
+  
+    background: var(--secondary-color);
+  
+  }
+  
+  
+
+
+/******************FOOTER******************/
+
+footer {
+    background-color: var(--text-color);
+    padding: 1rem 10px;
+    text-align: center;
+    color: var(--color);
+    font-family: Nunito, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: white solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+.video {
+    color: var(--color);
+}
+
+
