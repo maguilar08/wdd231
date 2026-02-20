@@ -346,3 +346,151 @@ footer {
 }
 
 
+/******************MAIN******************/
+
+
+#visitMessage {
+    margin: 1rem auto;
+    padding: 0.8rem 1rem;
+    max-width: 500px;
+    text-align: center;
+    background: var(--first-color);
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+
+#allplaces div {
+    margin: 1rem 8px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "location"
+    "visit"
+    "button";
+
+    justify-items: center;   /* centra horizontal */
+    align-items: center;     /* centra vertical */
+    text-align: center;      /* centra texto */
+}
+
+#allplaces div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+    color: var(--first-color);
+    font-size: 1.5rem;
+    font-family: "Cantora One";
+    color: var(--primary-color);
+}
+
+#allplaces div img {
+    width: 100%;
+    grid-area: photograph;
+    
+    
+    
+}
+
+#allplaces div p {
+    margin: 1rem 10px;
+    grid-area: visit;
+    font-family: "Nunito";
+    color: var(--text-color);
+    
+    
+}
+#allplaces div address {
+    margin: 1rem 10px;
+    grid-area: location;
+    font-family: "Nunito";
+    color: var(--text-color);
+}
+
+/* BUTTON*/
+.learn-btn {
+    display: block;
+    width: 80%;
+    margin: 1rem auto 1.5rem auto;
+    padding: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.25s;
+    grid-area: button;
+    font-family: "Nunito";
+    font-weight: bold;
+}
+
+.learn-btn:hover {
+    background: var(--secondary-color);
+    transform: scale(1.03);
+}
+
+
+
+/**************POPUP******************/
+#mydialog {
+    border-radius: 14px;
+    padding: 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid #6b7280;
+    /*background: rgba(255, 255, 255, 0.65);*/   /*transparente*/
+}
+
+
+
+
+
+
+
+
+
+
+
+#mydialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-bottom: #aaa 1px solid;
+    text-align: center;
+}
+
+#mydialog h2 {
+    margin: 0;
+    color: white;
+    font-family: Cantora One;
+}
+
+#mydialog button {
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #aaa;
+}
+
+#mydialog button:hover {
+    background-color: var(--text-color);
+    color: white;
+}
+
+#mydialog p {
+    padding: 10px;
+    color: var(--text-color);
+    font-family: "Nunito";
+}
+
+::backdrop {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
